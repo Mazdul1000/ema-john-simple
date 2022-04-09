@@ -5,18 +5,19 @@ import './Header.css'
 
 
 const Header = () => {
-    return (
-      <nav className='nav'>         
-       <img src={logo}  alt="" />
-       <div>
-           <Link to='/shop'>Shop</Link>
-           <Link to='/orders'>Orders</Link>
-           <Link to='/inventory'>Inventory</Link>
-           <Link to='/about'>About</Link>
+  return (
+    <nav className='nav'>
+      <img src={logo} alt="" />
+      <div>
+        <Link to='/shop'>Shop</Link>
+        <Link to='/orders'>Order Review</Link>
+        <Link to='/inventory'>Inventory</Link>
 
-       </div>      
-      </nav>
-    );
+        <Link to='/about'>About</Link>
+        <Link to='/login'>Log In</Link>
+      </div>
+    </nav>
+  );
 };
 
 export default Header;
